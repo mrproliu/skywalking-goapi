@@ -34,11 +34,6 @@ import "service-mesh-probe/service-mesh.proto";
 import "event/Event.proto";
 import "common/Common.proto";
 
-import "envoy/service/accesslog/v2/als.proto";
-import "envoy/service/accesslog/v3/als.proto";
-import "envoy/service/metrics/v2/metrics_service.proto";
-import "envoy/service/metrics/v3/metrics_service.proto";
-
 // SniffType declares the supported transfer data type.
 enum SniffType {
   CLRMetricType = 0;
@@ -95,17 +90,17 @@ message SniffData {
 }
 
 message EnvoyALSV2List {
-  repeated envoy.service.accesslog.v2.StreamAccessLogsMessage messages = 1;
+  repeated bytes messages = 1;
 }
 
 message EnvoyALSV3List {
-  repeated envoy.service.accesslog.v3.StreamAccessLogsMessage messages = 1;
+  repeated bytes messages = 1;
 }
 
 message EnvoyMetricsV2List {
-  repeated envoy.service.metrics.v2.StreamMetricsMessage messages = 1;
+  repeated bytes messages = 1;
 }
 
 message EnvoyMetricsV3List {
-  repeated envoy.service.metrics.v3.StreamMetricsMessage messages = 1;
+  repeated bytes messages = 1;
 }
