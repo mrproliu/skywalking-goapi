@@ -54,7 +54,6 @@ enum SniffType {
 
 // SniffData is the transfer unit in Satellite.
 message SniffData {
-
   // The occur time.
   int64 timestamp = 1;
   // unique event name.
