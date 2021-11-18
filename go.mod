@@ -1,4 +1,4 @@
-module github.com/mrproliu/skywalking-satellite
+module github.com/mrproliu/skywalking-goapi
 
 go 1.16
 
