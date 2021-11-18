@@ -82,10 +82,9 @@ function generateCodes(){
     "$PROTOCOLDIR"/satellite/*.proto \
     $(bash "$BASEDIR"/scripts/envoy-import.sh files "$PROTOCOLDIR") \
 
-  mv "$BASEDIR"/skywalking.apache.org/repo/goapi/collect "$BASEDIR"/ \
-  && mv "$BASEDIR"/skywalking.apache.org/repo/goapi/satellite/data/v1/* "$BASEDIR"/satellite/data/v1 \
+  mv "$BASEDIR"/github.com/mrproliu/skywalking-goapi/satellite/data/v1/* "$BASEDIR"/satellite/data/v1 \
   && mv "$BASEDIR"/skywalking.apache.org/repo/goapi/proto/ "$BASEDIR"/ \
-  && rm -rf "$BASEDIR"/skywalking.apache.org && rm -rf $TEMPDIR
+  && rm -rf "$BASEDIR"/github.com && rm -rf $TEMPDIR
 
   go mod tidy
 }
