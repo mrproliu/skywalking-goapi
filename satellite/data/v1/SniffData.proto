@@ -91,11 +91,13 @@ message SniffData {
 }
 
 message EnvoyALSV2List {
-  repeated bytes messages = 1;
+  string identity = 1;
+  repeated bytes messages = 2;
 }
 
 message EnvoyALSV3List {
-  repeated bytes messages = 1;
+  string identity = 1;
+  repeated bytes messages = 2;
 }
 
 message EnvoyMetricsV2List {
