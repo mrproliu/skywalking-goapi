@@ -7,15 +7,15 @@
 package core
 
 import (
+	_type "github.com/mrproliu/skywalking-goapi/proto/envoy/type"
+	_ "github.com/mrproliu/skywalking-goapi/proto/udpa/annotations"
+	_ "github.com/mrproliu/skywalking-goapi/proto/validate"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
 	structpb "google.golang.org/protobuf/types/known/structpb"
 	wrapperspb "google.golang.org/protobuf/types/known/wrapperspb"
 	reflect "reflect"
-	_type "skywalking.apache.org/repo/goapi/proto/envoy/type"
-	_ "skywalking.apache.org/repo/goapi/proto/udpa/annotations"
-	_ "skywalking.apache.org/repo/goapi/proto/validate"
 	sync "sync"
 )
 

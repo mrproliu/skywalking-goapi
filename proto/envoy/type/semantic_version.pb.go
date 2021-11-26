@@ -7,10 +7,10 @@
 package _type
 
 import (
+	_ "github.com/mrproliu/skywalking-goapi/proto/udpa/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
-	_ "skywalking.apache.org/repo/goapi/proto/udpa/annotations"
 	sync "sync"
 )
 

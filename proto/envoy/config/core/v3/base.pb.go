@@ -7,17 +7,17 @@
 package v3
 
 import (
+	_ "github.com/mrproliu/skywalking-goapi/proto/envoy/annotations"
+	v3 "github.com/mrproliu/skywalking-goapi/proto/envoy/type/v3"
+	_ "github.com/mrproliu/skywalking-goapi/proto/udpa/annotations"
+	_ "github.com/mrproliu/skywalking-goapi/proto/validate"
+	v31 "github.com/mrproliu/skywalking-goapi/proto/xds/core/v3"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
 	structpb "google.golang.org/protobuf/types/known/structpb"
 	wrapperspb "google.golang.org/protobuf/types/known/wrapperspb"
 	reflect "reflect"
-	_ "skywalking.apache.org/repo/goapi/proto/envoy/annotations"
-	v3 "skywalking.apache.org/repo/goapi/proto/envoy/type/v3"
-	_ "skywalking.apache.org/repo/goapi/proto/udpa/annotations"
-	_ "skywalking.apache.org/repo/goapi/proto/validate"
-	v31 "skywalking.apache.org/repo/goapi/proto/xds/core/v3"
 	sync "sync"
 )
 

@@ -24,10 +24,10 @@
 package v3
 
 import (
+	v3 "github.com/mrproliu/skywalking-goapi/collect/common/v3"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
-	v3 "skywalking.apache.org/repo/goapi/collect/common/v3"
 	sync "sync"
 )
 

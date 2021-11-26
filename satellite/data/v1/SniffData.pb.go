@@ -24,18 +24,18 @@
 package v1
 
 import (
+	v36 "github.com/mrproliu/skywalking-goapi/collect/agent/configuration/v3"
+	v35 "github.com/mrproliu/skywalking-goapi/collect/common/v3"
+	v34 "github.com/mrproliu/skywalking-goapi/collect/event/v3"
+	v3 "github.com/mrproliu/skywalking-goapi/collect/language/agent/v3"
+	v32 "github.com/mrproliu/skywalking-goapi/collect/language/profile/v3"
+	v31 "github.com/mrproliu/skywalking-goapi/collect/management/v3"
+	v33 "github.com/mrproliu/skywalking-goapi/collect/servicemesh/v3"
+	v2 "github.com/mrproliu/skywalking-goapi/proto/envoy/service/metrics/v2"
+	v37 "github.com/mrproliu/skywalking-goapi/proto/envoy/service/metrics/v3"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
-	v36 "skywalking.apache.org/repo/goapi/collect/agent/configuration/v3"
-	v35 "skywalking.apache.org/repo/goapi/collect/common/v3"
-	v34 "skywalking.apache.org/repo/goapi/collect/event/v3"
-	v3 "skywalking.apache.org/repo/goapi/collect/language/agent/v3"
-	v32 "skywalking.apache.org/repo/goapi/collect/language/profile/v3"
-	v31 "skywalking.apache.org/repo/goapi/collect/management/v3"
-	v33 "skywalking.apache.org/repo/goapi/collect/servicemesh/v3"
-	v2 "skywalking.apache.org/repo/goapi/proto/envoy/service/metrics/v2"
-	v37 "skywalking.apache.org/repo/goapi/proto/envoy/service/metrics/v3"
 	sync "sync"
 )
 

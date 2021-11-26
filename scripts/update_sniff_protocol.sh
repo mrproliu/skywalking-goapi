@@ -57,6 +57,7 @@ function cleanHistoryCodes(){
 function prepareSatelliteProtocols() {
   mkdir -p "$PROTOCOLDIR/satellite/"
   cp -R "$BASEDIR"/satellite/data/v1/*.proto "$PROTOCOLDIR/satellite/"
+  cp -R "$BASEDIR"/satellite/envoy/accesslog/*.proto "$PROTOCOLDIR/satellite/"
 }
 
 function generateCodes(){
@@ -80,14 +81,14 @@ function generateCodes(){
     --go-grpc_out="$BASEDIR" \
     $(bash "$BASEDIR"/scripts/envoy-import.sh opts "$PROTOCOLDIR") \
     "$PROTOCOLDIR"/satellite/*.proto \
-    $(bash "$BASEDIR"/scripts/envoy-import.sh files "$PROTOCOLDIR") \
+    $(bash "$BASEDIR"/scripts/envoy-import.sh files "$PROTOCOLDIR")
 
-  mv "$BASEDIR"/skywalking.apache.org/repo/goapi/collect "$BASEDIR"/ \
-  && mv "$BASEDIR"/skywalking.apache.org/repo/goapi/satellite/data/v1/* "$BASEDIR"/satellite/data/v1 \
-  && mv "$BASEDIR"/skywalking.apache.org/repo/goapi/proto/ "$BASEDIR"/ \
+#  mv "$BASEDIR"/github.com/mrproliu/skywalking-goapi/collect "$BASEDIR"/ \
+  mv "$BASEDIR"/github.com/mrproliu/skywalking-goapi/satellite/data/v1/* "$BASEDIR"/satellite/data/v1 \
+  && mv "$BASEDIR"/github.com/mrproliu/skywalking-goapi/proto/ "$BASEDIR"/ \
   && rm -rf "$BASEDIR"/skywalking.apache.org && rm -rf $TEMPDIR
 
-  go mod tidy
+#  go mod tidy
 }
 
 initProtocolHome

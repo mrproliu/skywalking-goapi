@@ -29,8 +29,8 @@ function proto(){
   pack=$(dirname $path)
   if [[ $TYPE == "opts" ]];
   then
-    echo "--go_opt=M$path=skywalking.apache.org/repo/goapi/proto/$pack"
-    echo "--go-grpc_opt=M$path=skywalking.apache.org/repo/goapi/proto/$pack"
+    echo "--go_opt=M$path=github.com/mrproliu/skywalking-goapi/proto/$pack"
+    echo "--go-grpc_opt=M$path=github.com/mrproliu/skywalking-goapi/proto/$pack"
   elif [[ $TYPE == "files" ]]; then
     echo "$PROTODIR/$name/$path"
   fi

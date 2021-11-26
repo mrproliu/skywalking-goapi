@@ -7,6 +7,8 @@
 package core
 
 import (
+	_ "github.com/mrproliu/skywalking-goapi/proto/udpa/annotations"
+	_ "github.com/mrproliu/skywalking-goapi/proto/validate"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"
@@ -14,8 +16,6 @@ import (
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	structpb "google.golang.org/protobuf/types/known/structpb"
 	reflect "reflect"
-	_ "skywalking.apache.org/repo/goapi/proto/udpa/annotations"
-	_ "skywalking.apache.org/repo/goapi/proto/validate"
 	sync "sync"
 )
 

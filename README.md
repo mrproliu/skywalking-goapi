@@ -7,14 +7,14 @@ the [query protocol](http://github.com/apache/skywalking-query-protocol) for con
 You can use the following commands to install this module.
 
 ```shell
-go get skywalking.apache.org/repo/goapi
+go get github.com/mrproliu/skywalking-goapi
 ```
 
 ## Data Sniff Protocol
 
 To use the Go files generated from
 the [data collect protocol](http://github.com/apache/skywalking-data-collect-protocol) and the satellite protocol, use the import
-path `skywalking.apache.org/repo/goapi/collect` and `skywalking.apache.org/repo/goapi/satellite`, for example,
+path `github.com/mrproliu/skywalking-goapi/collect` and `github.com/mrproliu/skywalking-goapi/satellite`, for example,
 
 ```go
 package main
@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"time"
 
-	v3 "skywalking.apache.org/repo/goapi/collect/event/v3"
-	v1 "skywalking.apache.org/repo/goapi/satellite/data/v1"
+	v3 "github.com/mrproliu/skywalking-goapi/collect/event/v3"
+	v1 "github.com/mrproliu/skywalking-goapi/satellite/data/v1"
 )
 
 func main() {
@@ -57,7 +57,7 @@ func main() {
 ## Query Protocol
 
 To use the Go files generated from the [query protocol](http://github.com/apache/skywalking-query-protocol), use the
-import path `skywalking.apache.org/repo/goapi/query`, for example,
+import path `github.com/mrproliu/skywalking-goapi/query`, for example,
 
 ```go
 package main
@@ -65,7 +65,7 @@ package main
 import (
 	"fmt"
 
-	"skywalking.apache.org/repo/goapi/query"
+	"github.com/mrproliu/skywalking-goapi/query"
 )
 
 func main() {

@@ -7,13 +7,13 @@
 package v3
 
 import (
+	v3 "github.com/mrproliu/skywalking-goapi/proto/envoy/config/core/v3"
+	client "github.com/mrproliu/skywalking-goapi/proto/io/prometheus/client"
+	_ "github.com/mrproliu/skywalking-goapi/proto/udpa/annotations"
+	_ "github.com/mrproliu/skywalking-goapi/proto/validate"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
-	v3 "skywalking.apache.org/repo/goapi/proto/envoy/config/core/v3"
-	client "skywalking.apache.org/repo/goapi/proto/io/prometheus/client"
-	_ "skywalking.apache.org/repo/goapi/proto/udpa/annotations"
-	_ "skywalking.apache.org/repo/goapi/proto/validate"
 	sync "sync"
 )
 
